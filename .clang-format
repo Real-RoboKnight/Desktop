@@ -73,7 +73,7 @@ SortIncludes:
   IgnoreCase: true
 SpaceAfterCStyleCast: true
 TabWidth: 4
-Language: Cpp
+# Language: Cpp
 AllowAllConstructorInitializersOnNextLine: true
 AlwaysBreakAfterReturnType: None
 AlwaysBreakTemplateDeclarations: Yes
@@ -85,3 +85,13 @@ SpacesInConditionalStatement: false
 SpacesInCStyleCastParentheses: false
 SpacesInParentheses: false
 UseCRLF: false
+...
+
+---
+Language: C
+# Inherit everything from the Cpp section above, but override the separator
+IntegerLiteralSeparator:
+  Binary: 0
+  Decimal: 0
+  Hex: 0
+...
